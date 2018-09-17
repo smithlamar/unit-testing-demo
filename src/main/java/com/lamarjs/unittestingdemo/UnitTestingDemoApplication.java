@@ -1,12 +1,15 @@
 package com.lamarjs.unittestingdemo;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class UnitTestingDemoApplication {
+    private static final Logger log = LoggerFactory.getLogger(UnitTestingDemoApplication.class);
 
-	public static void main(String[] args) {
-		SpringApplication.run(UnitTestingDemoApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(UnitTestingDemoApplication.class, args);
+    }
 }
