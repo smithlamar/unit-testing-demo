@@ -1,6 +1,6 @@
 **What is this code?**
 
-The goal was to demonstrate basic unit testing in junit4 to accompany this article. The develop branch contains a partial implementation of an AccountingService which performs operations on a List of AccountEntry objects. AccountEntry's represent indiviual deposits and withdrawals (debit/credit) of monetary values. The sum of these debits and credits represent the current state of your account.
+The goal was to demonstrate basic unit testing in junit4 to accompany this article. The develop branch contains a partial implementation of an AccountingService which performs operations on a List of AccountEntry objects. AccountEntry's represent indiviual deposits and withdrawals (credits/debits) of monetary values. The sum of these debits and credits represent the current state of your account.
 
 The simple  implementation can be found in the src/main/java/com/lamarjs package. The corresponding unit tests are in the scr/test/java/com/lamarjs/ package. The tests will tell you what the expected functionality of the AccountingService class is.
 
