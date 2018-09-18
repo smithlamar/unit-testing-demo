@@ -1,4 +1,9 @@
-**First the philosophical**:
+**What is this code?**
+The goal was to demonstrate basic unit testing in junit4 to accompany this article. The develop branch contains a partial implementation of an AccountingService which performs operations on a List<AccountEntry>. AccountEntry objects represent indiviual deposits and withdrawals (debit/credit) of monetary values. The sum of these debits and credits represent the current state of your account.
+
+The simple  implementation can be found in the src/main/java/com/lamarjs package. The corresponding unit tests are in the scr/test/java/com/lamarjs/ package. The tests will tell you what the expected functionality of the AccountingService class is.
+
+**First, the philosophical**
 
 What is unit testing?
 
@@ -56,6 +61,7 @@ we could have our mocked instance of it return an explicit integer any time it i
 Generally, the mocked return value should correspond to what that service should have returned in the scenario we are
 testing of the class that uses it.
 
+Another good way to use mocks is to force negative behavior from dependencies to test how your code handles them. This can be as simple as returning a 404 or 500 from a dependent rest endpoint to having your database return bad data. This allows you to test that your app handles these scenarios gracefully.
 
 References:
 
